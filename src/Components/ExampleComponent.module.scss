@@ -1,0 +1,14 @@
+.list {
+    padding: 25px;
+    background: burlywood;
+}
+
+.list__item {
+    font-family: 'Hack';
+    font-size: 15px;
+    color: #125699;
+
+    &:nth-child(even) {
+        color: #333333;
+    }
+}
