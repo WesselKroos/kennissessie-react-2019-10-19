@@ -23,7 +23,7 @@ export default ({
     </ul>
 
     <button onClick={toggle}>
-      {allShown ? "Toon eerste 5 items" : "Toon alle items"}
+      {allShown ? "Toon eerste 5" : "Toon alles"}
     </button>
 
   </>)
