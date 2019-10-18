@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import ExampleComponent from './Components/ExampleComponent';
+import Frameworks from './Components/Frameworks';
 
 export default class App extends Component {
-  render = () => { 
+  render = () => {
     return (
-      <ExampleComponent frameworks={['React', 'Angular', 'Vue', 'Svelte', 'Bootstrap', 'Tailwind', 'Knockout', '.NET', 'Ruby-on-Rails']} />
+      <Frameworks items={['React', 'Angular', 'Vue', 'Svelte', 'Bootstrap', 'Tailwind', 'Knockout', '.NET', 'Ruby-on-Rails']} />
     );
   }
 }

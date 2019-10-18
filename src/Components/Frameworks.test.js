@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ExampleComponent from './ExampleComponent';
+import Frameworks from './Frameworks';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<ExampleComponent />, div);
+  ReactDOM.render(<Frameworks />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
