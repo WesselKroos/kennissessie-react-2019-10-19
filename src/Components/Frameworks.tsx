@@ -1,12 +1,13 @@
 import { Component } from 'react'
-import DComponent from '../decorators/DComponent'
+import TemplatedComponent from '../decorators/TemplatedComponent'
+import Template from './Frameworks.template'
+import Style from './Frameworks.module.scss'
 
-@DComponent({
-  templateUrl: 'FrameworksTemplate.tsx',
-  styleUrls: ['Frameworks.module.scss']
+@TemplatedComponent({
+  template: Template,
+  style: Style
 })
 export default class Frameworks extends Component<{items: string[]}> {
-
   static defaultProps = { items: [] }
   state = { allShown: false }
 

@@ -1,17 +1,12 @@
 import React from 'react';
-export default ({
-  state: { allShown },
-  props: { items },
-  style: { list, list__item },
-  toggle
-}: {
-  state: any,
-  props: { items: string[] },
-  style: any,
-  toggle: () => void
-}) =>
-  (<>
 
+export default (
+  { items }: { items: string[] },
+  { allShown }: any,
+  { toggle }: any,
+  { list, list__item }: any
+) =>
+  <>
     <ul className={list}>
       {items
         .filter((framework, i) => allShown || (!allShown && i < 5))
@@ -25,5 +20,4 @@ export default ({
     <button onClick={toggle}>
       {allShown ? "Toon eerste 5" : "Toon alles"}
     </button>
-
-  </>)
+  </>
